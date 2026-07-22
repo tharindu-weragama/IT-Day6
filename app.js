@@ -67,7 +67,7 @@ console.log(customer2.item[2].variants[1].price);
 
 // DOM (Document object Model) Manipulation ----------------------------
 
-console.log(document);
+/*console.log(document);
 
 let heading = document.getElementById("heading");
 console.log(heading);
@@ -94,5 +94,30 @@ function changeHeading3(){
     let heading = document.getElementById("heading3")
     heading.innerText = textInput.value;
 
+}*/
+
+function btnumonAction() {
+    console.log("clicked");
+    let input1 = document.getElementById("inputText1").value;
+    let input2 = document.getElementById("inputText2").value;
+
+    let sum = parseInt(input1) + parseInt(input2);
+    document.getElementById("changeHeading3").innerText = "SUM : " + sum;
+
+    console.log(input1);
+    console.log(input2);
+    console.log(sum);
 }
 
+function btnumonActionub() {
+    console.log("clicked");
+    let input1 = document.getElementById("inputText1").value;
+    let input2 = document.getElementById("inputText2").value;
+
+    let sum = parseInt(input1) - parseInt(input2);
+    document.getElementById("changeHeading3").innerText = "SUM : " + sum;
+
+    console.log(input1);
+    console.log(input2);
+    console.log(sum);
+}
