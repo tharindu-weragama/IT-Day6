@@ -96,7 +96,7 @@ function changeHeading3(){
 
 }*/
 
-function btnumonAction() {
+/*function btnumonAction() {
     console.log("clicked");
     let input1 = document.getElementById("inputText1").value;
     let input2 = document.getElementById("inputText2").value;
@@ -120,4 +120,48 @@ function btnumonActionub() {
     console.log(input1);
     console.log(input2);
     console.log(sum);
+}*/
+
+let customerList = [];
+
+function btnAddCustomerOnAction() {
+    let txtName = document.getElementById("txtName").value;
+    let txtAddress = document.getElementById("txtAddress").value;
+    let txtAge = document.getElementById("txtAge").value;
+    let txtEmail = document.getElementById("txtEmail").value;
+    let txtSalary = document.getElementById("txtSalary").value;
+
+let customer = {
+    name: txtName,
+    address: txtAddress,
+    age: txtAge,
+    email: txtEmail,
+    salary: txtSalary
+}
+
+customerList.push(customer);
+loadTable();
+console.log(customerList);
+
+}
+
+function loadTable(){
+    let tblCutomers = document.getElementById("tblCustomers");
+
+    let body = "";
+
+    for(let i = 0 ; i<customerList.length;i++){
+        body+=`<tr>
+            <td>${customerList[i].name}</td>
+            <td>${customerList[i].address}</td>
+            <td>${customerList[i].age}</td>
+            <td>${customerList[i].email}</td>
+            <td>${customerList[i].salary}</td>
+        </tr>`;
+    }
+
+    tblCutomers.innerHTML+= body;
+
+    console.log(tblCutomers);
+
 }

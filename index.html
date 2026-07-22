@@ -17,14 +17,36 @@
     <h3 id="heading3"> KAMAL</h3>
     <input type="button" value="CLICK ME" onclick="changeHeading3()"> -->
 
-    <input type="text" placeholder="enter num 1" id="inputText1">
+   <!-- <input type="text" placeholder="enter num 1" id="inputText1">
     <input type="text" placeholder="enter num 2" id="inputText2">
 
     <h1 id="changeHeading3">Output</h1>
 
     <input type="button" value="+" onclick="btnumonAction()">
     
-    <input type="button" value="-" onclick="btnumonActionub()">
+    <input type="button" value="-" onclick="btnumonActionub()">-->
+
+    <h1>Customer Manager</h1>
+
+    <input type="text" placeholder="name" id="txtName"> <br>
+    <input type="text" placeholder="address" id="txtAddress"> <br>
+    <input type="text" placeholder="age" id="txtAge"> <br>
+    <input type="text" placeholder="email" id="txtEmail"> <br>
+    <input type="text" placeholder="salary" id="txtSalary">
+
+    <input type="button" value="Add Customer" onclick="btnAddCustomerOnAction()">
+
+    <table border="1" id="tblCustomers">
+        <tr>
+            <td>Name</td>
+            <td>Address</td>
+            <td>Age</td>
+            <td>Email</td>
+            <td>Salary</td>
+        </tr>
+    </table>
+
+    <input type="button" value="Load table" onclick="loadTable">
 
     <script src="app.js">  </script>
 </body>
