@@ -1,4 +1,4 @@
-class customer {
+/*class customer {
     name;
     age;
     address;
@@ -63,4 +63,20 @@ console.log(customer2.salary);
 console.log(customer2.item[2]);
 console.log(customer2.father.name);
 console.log(customer2.item[2].variants[1].price);
+*/
+
+// DOM (Document object Model) Manipulation ----------------------------
+
+console.log(document);
+
+let heading = document.getElementById("heading");
+console.log(heading);
+
+heading.innerText = "ICET"; 
+
+function changeHeading(){
+    heading.innerText = "Tharindu"; 
+    console.log("Clicked");
+
+}
 
