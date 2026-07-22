@@ -74,9 +74,25 @@ console.log(heading);
 
 heading.innerText = "ICET"; 
 
+let number = 0;
+
 function changeHeading(){
-    heading.innerText = "Tharindu"; 
+    heading.innerText = "Tharindu"+ ++number; 
     console.log("Clicked");
+
+}
+
+function reduceHeading(){
+    heading.innerText = "Tharindu"+ --number; 
+    console.log("Clicked");
+
+}
+
+function changeHeading3(){
+    let textInput = document.getElementById("inputText");
+    console.log(textInput.value);
+    let heading = document.getElementById("heading3")
+    heading.innerText = textInput.value;
 
 }
 
